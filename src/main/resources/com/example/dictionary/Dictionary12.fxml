@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="com.example.dictionary.HelloController"
+        maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView layoutX="24.0" layoutY="59.0" prefHeight="200.0" prefWidth="200.0"
+                fx:id="listKeys"/>
+      <ListView layoutX="337.0" layoutY="59.0" prefHeight="200.0" prefWidth="200.0"
+                fx:id="listValues"/>
+      <Button layoutX="244.0" layoutY="59.0" mnemonicParsing="false" text="Add words"
+              onAction="#addToCollection"/>
+      <Button layoutX="244.0" layoutY="92.0" mnemonicParsing="false" text="Del words"
+              onAction="#deleteFromCollection"/>
+      <Button layoutX="244.0" layoutY="122.0" mnemonicParsing="false" text="Edit words"
+              onAction="#editeWord"/>
+      <Button layoutX="263.0" layoutY="233.0" mnemonicParsing="false" text="Exit"
+              onAction="#closeWindow" fx:id="closeTheWindow"/>
+      <TextField layoutX="24.0" layoutY="21.0" prefHeight="26.0" prefWidth="200.0"
+                 fx:id="ValueInput"/>
+      <TextField layoutX="337.0" layoutY="21.0" prefHeight="26.0" prefWidth="200.0"
+                 fx:id="KeyInput"/>
+   </children>
+</AnchorPane>
